@@ -94,7 +94,7 @@ export interface ExtractionResult {
  * ContentExtractor — register an extractor for one or more MIME types.
  *
  * The core ships built-in extractors for HTML, JSON, XML, plain-text, and
- * Markdown.  The optional `web-retriever-pdf` package registers itself via
+ * Markdown.  The optional `search-tool-pdf` package registers itself via
  * this interface.
  */
 export interface ContentExtractor {
@@ -106,7 +106,7 @@ export interface ContentExtractor {
  * DiscoveryProvider — supply candidate URLs from an external source.
  *
  * The core does not use this by default.  Optional packages such as
- * `web-retriever-searxng` implement it and are passed at init time.
+ * `search-tool-searxng` implement it and are passed at init time.
  */
 export interface DiscoveryResult {
   url: string;
@@ -226,7 +226,7 @@ export interface RetrieveOptions {
   enableOcr?: boolean;
   /**
    * Enable browser-rendered fetching via an injected FetchOverride.
-   * Requires web-retriever-browser to be installed separately.
+   * Requires search-tool-browser to be installed separately.
    * Not compatible with Vercel Free / serverless (§129.3).
    */
   enableBrowser?: boolean;

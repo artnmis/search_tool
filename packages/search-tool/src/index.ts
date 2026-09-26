@@ -3,7 +3,7 @@
  *
  * This is the only file consumers should import from when using the default
  * entry point.  AI SDK integrations are available as separate sub-exports
- * (e.g. "web-retriever/openai") to keep the core bundle lean.
+ * (e.g. "search-tool/openai") to keep the core bundle lean.
  *
  * §9.5 of the implementation task list and §2.5 (AI-provider agnostic) of
  * the spec: the core package must NOT pull in any AI SDK.

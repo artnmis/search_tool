@@ -19,7 +19,7 @@ const PKG_VERSION = "0.0.1";
  * that operators can recognise and manage the traffic.
  */
 export const USER_AGENT =
-  `WebRetriever/${PKG_VERSION} (+https://github.com/web-retriever; AI evidence retrieval)`;
+  `SearchTool/${PKG_VERSION} (+https://github.com/artnmis/search_tool; AI evidence retrieval)`;
 
 /**
  * Returns the baseline headers that must be included on every fetch.

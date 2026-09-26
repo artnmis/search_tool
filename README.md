@@ -264,4 +264,4 @@ Source lives at [github.com/artnmis/search_tool](https://github.com/artnmis/sear
 
 ## License
 
-None
+MIT

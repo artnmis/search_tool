@@ -7,7 +7,7 @@
  *
  * A host application implementing a Redis-backed cache only needs:
  *
- *   import type { CacheProvider } from "@web-retriever/web-retriever/cache"
+ *   import type { CacheProvider } from "search-tool/cache"
  */
 
 export type { CacheProvider } from "../core/types.js";

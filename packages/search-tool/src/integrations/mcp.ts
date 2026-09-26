@@ -7,7 +7,7 @@
  *
  * This is an optional entry point that exposes the retriever as an MCP tool
  * server over stdio.  It has zero effect on the core bundle when not used —
- * callers import from "web-retriever/mcp" explicitly.
+ * callers import from "search-tool/mcp" explicitly.
  *
  * MCP protocol: https://modelcontextprotocol.io/docs/concepts/tools
  *
@@ -17,7 +17,7 @@
  * Or registered in an MCP host config:
  *   {
  *     "mcpServers": {
- *       "web-retriever": { "command": "node", "args": ["./node_modules/web-retriever/dist/integrations/mcp.js"] }
+ *       "search-tool": { "command": "node", "args": ["./node_modules/search-tool/dist/integrations/mcp.js"] }
  *     }
  *   }
  */

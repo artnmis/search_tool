@@ -1,8 +1,8 @@
 {
-  "name": "web-retriever-monorepo",
+  "name": "search-tool-monorepo",
   "private": true,
   "version": "0.0.0",
-  "description": "Monorepo for the deterministic web retriever for AI agents",
+  "description": "Monorepo for search-tool — a deterministic web retriever for AI agents",
   "workspaces": [
     "packages/*"
   ],

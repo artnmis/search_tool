@@ -34,7 +34,7 @@ export class RobotsPolicy {
 
   /**
    * @param agentName  The user-agent token to match against robots groups.
-   *                   Defaults to the retriever's own token ("WebRetriever").
+   *                   Defaults to the retriever's own token ("SearchTool").
    * @param cacheTtlMs How long to cache a robots.txt result (ms).
    */
   constructor(
@@ -209,7 +209,7 @@ function escapeRegex(s: string): string {
 
 /**
  * Extracts the first token from a User-Agent string for robots matching.
- * "WebRetriever/0.0.1 (+...)" → "webretriever"
+ * "SearchTool/0.0.1 (+...)" → "searchtool"
  */
 function extractAgentToken(userAgent: string): string {
   return (userAgent.split("/")[0] ?? userAgent).toLowerCase();
