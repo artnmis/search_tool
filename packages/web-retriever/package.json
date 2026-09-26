@@ -1,9 +1,31 @@
 {
-  "name": "package.json",
-  "version": "0.0.1",
-  "description": "Deterministic web retriever for AI agents — core package",
-  "license": "MIT",
+  "name": "search-tool",
+  "version": "1.0.0",
+  "description": "Deterministic web retriever for AI agents — no search API, no external service, no AI inside the retriever itself.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artnmis/search_tool.git"
+  },
+  "homepage": "https://github.com/artnmis/search_tool#readme",
+  "bugs": {
+    "url": "https://github.com/artnmis/search_tool/issues"
+  },
+  "keywords": [
+    "web-retrieval",
+    "ai-agents",
+    "search",
+    "tool-use",
+    "mcp",
+    "llm"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -20,6 +42,10 @@
     "./anthropic": {
       "import": "./dist/integrations/anthropic.js",
       "types": "./dist/integrations/anthropic.d.ts"
+    },
+    "./mcp": {
+      "import": "./dist/integrations/mcp.js",
+      "types": "./dist/integrations/mcp.d.ts"
     }
   },
   "scripts": {
@@ -37,13 +63,12 @@
   },
   "devDependencies": {
     "@types/node": "^20.14.11",
-    "@mozilla/readability": "^0.5.0",
     "typescript": "^5.5.4",
     "vitest": "^2.0.4",
     "@vitest/coverage-v8": "^2.0.4",
     "eslint": "^9.7.0",
-    "@typescript-eslint/eslint-plugin": "^7.17.0",
-    "@typescript-eslint/parser": "^7.17.0"
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0"
   },
   "optionalDependencies": {
     "unpdf": "^0.11.0"

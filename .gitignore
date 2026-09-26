@@ -1,0 +1,66 @@
+﻿# --- Dependencies ------------------------------------------------------------
+# Installed packages at every level of the monorepo.
+node_modules/
+
+# --- Build output -------------------------------------------------------------
+# TypeScript compiler output for every package.
+dist/
+build/
+out/
+
+# Declaration maps and source maps (generated, not authored).
+*.d.ts.map
+*.js.map
+
+# --- TypeScript ---------------------------------------------------------------
+# tsbuildinfo is a TS incremental build cache — machine-local, not useful in git.
+*.tsbuildinfo
+
+# --- Test & coverage ----------------------------------------------------------
+coverage/
+.nyc_output/
+
+# --- pnpm ---------------------------------------------------------------------
+# The lockfile IS committed (it pins exact versions for reproducible installs).
+# The virtual store and patch state are machine-local.
+.pnpm-store/
+.pnpm-debug.log
+
+# --- Logs ---------------------------------------------------------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- OS / editor artefacts ----------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.Spotlight-V100
+.Trashes
+
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Environment files --------------------------------------------------------
+# Never commit secrets or local overrides.
+.env
+.env.*
+!.env.example
+
+# --- Temp / scratch -----------------------------------------------------------
+tmp/
+temp/
+.tmp/
+*.tmp
+
+# --- Bob / agent sessions -----------------------------------------------------
+# Session state written by the AI tooling — local only.
+bob_sessions/
+.bob/
