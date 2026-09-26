@@ -1,0 +1,22 @@
+# Everything not in "files" (dist/) is already excluded by package.json.
+# This file is belt-and-suspenders: explicitly keep tests, source, and tooling
+# out of the tarball in case someone overrides "files".
+
+# Source & tests
+src/
+tests/
+
+# TypeScript project config
+tsconfig.json
+vitest.config.ts
+
+# Coverage / build cache
+coverage/
+*.tsbuildinfo
+
+# Dev dotfiles
+.eslintrc*
+.prettierrc*
+
+# Misc
+*.log

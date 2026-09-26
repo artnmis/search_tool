@@ -33,6 +33,14 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# --- Agent tooling / AI sessions ----------------------------------------------
+# Bob/Claude agent config, session state, skills — local-only, never for git.
+.agents/
+skills-lock.json
+
+# --- Scratch / generated outputs ----------------------------------------------
+repomix-output.xml
+
 # --- OS / editor artefacts ----------------------------------------------------
 .DS_Store
 Thumbs.db
@@ -60,7 +68,8 @@ temp/
 .tmp/
 *.tmp
 
+
 # --- Bob / agent sessions -----------------------------------------------------
-# Session state written by the AI tooling — local only.
+# Session state written by the AI tooling - local only.
 bob_sessions/
 .bob/
