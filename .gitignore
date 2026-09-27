@@ -71,5 +71,4 @@ temp/
 
 # --- Bob / agent sessions -----------------------------------------------------
 # Session state written by the AI tooling - local only.
-bob_sessions/
 .bob/
